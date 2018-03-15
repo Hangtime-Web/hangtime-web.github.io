@@ -72,7 +72,6 @@ header nav ul li a:hover {
 }
 
 
-
 /* HOME */
 .img1 {
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../image/map.jpg);
@@ -323,15 +322,30 @@ header nav ul li a:hover {
     background-color: #222222;
 }
 
+.footer .about a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .about a:hover {
+    color: #FD5656;
+    text-decoration: none;
+}
+
 .footer .social {
     font-size: 20px;
     height: 30px;
     width: 30px;
     text-align: center;
     padding: 5px;
-    border: 1px solid #cccccc;
     margin-bottom: 10px;
     margin-right: 5px;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer .social:hover {
+    color: #FD5656;
 }
 
 .footer input {
