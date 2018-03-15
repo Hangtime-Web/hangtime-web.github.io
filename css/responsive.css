@@ -1,0 +1,94 @@
+.slicknav_menu {
+    display:none;
+}
+
+@media screen and (max-width: 600px) {
+    #menu {
+        display: none;
+    }
+    
+    .slicknav_menu {
+        display: inline-block;
+        position:fixed;
+        background: transparent;
+        z-index: 1000;
+        right: 0;
+        margin-top: 85px;
+    }
+    
+    header {
+        margin-top: 100px;
+        background-color: transparent;
+    }
+    
+    .slider {
+        margin-top: -100px;
+    }
+    
+    .slicknav_btn {
+        margin: 35px 30px 0px 0px;
+        background: transparent;
+    }
+    
+    .slicknav_nav {
+        background: white;
+        width: 200px;
+    }
+    
+    .slicknav_nav li {
+        margin: 0;
+        padding: 0;
+        height: 3em;
+        line-height: 3em;
+        width: 200px;
+        border-bottom: 1px solid lightgray;
+        /*border-top: 1px solid #3d5267;*/
+        text-align: center;
+    }
+    
+    .slicknav_nav li a {
+        margin: 0;
+        padding: 0;
+        color: gray;
+        font-weight: bold;
+        transition: all 0.2s;
+    }
+    
+    .slicknav_nav li a:hover {
+        color: #FD5656;
+        text-decoration: none;
+        background: none;
+    }  
+}
+
+
+@media screen and (max-width: 380px) {
+    .slider a {
+        display: inline-block;
+        width: 100%;
+    }
+    
+    .slider .button {
+        margin-top: 30px;
+    }
+    
+    header .logo {
+        font-size: 15px;
+        width: 150px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 732px) {
+    .team-social-network {
+        text-align: center;
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+   
+    header .logo {
+        margin-left: 10px;
+    }
+}

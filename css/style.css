@@ -1,45 +1,362 @@
-/* Always set the map height explicitly to define the size of the div
- * element that contains the map. */
-#map {
-  height: 100%;
-}
-/* Optional: Makes the sample page fill the window. */
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+*, html, body {
+    padding: 0px;
+    margin: 0px;
 }
 
-.theme {
-  color: #FD5656;
+body {
+    overflow-x: hidden;
+    font-family: Arial,Helvetica,sans-serif;
 }
 
-.imgBlur {
-  -webkit-filter: blur(5px);
-  /* Safari 6.0 - 9.0 */
-  filter: blur(5px);
+
+
+/* Slick Navigation Bar */
+.secondary {
+    background-color: white;
+    border-bottom: 1px solid lightgray;   
 }
-html{
-  overflow-y: hidden;
+.secondary .logo {
+    color: #FD5656;
 }
-html{
-}
-::-webkit-scrollbar {
-    width: 0px;  /* remove scrollbar space */
-    background: transparent;  /* optional: just make scrollbar invisible */
-}
-/* optional: show position indicator in red */
-::-webkit-scrollbar-thumb {
-    background: #FF0000;
+.secondary nav ul li a {
+    color: gray;
+    transition: all 0.2s ease-in-out;
 }
 
-.indicators .indicator-item {
-  background-color: #666666;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+
+/* NAVIGATION BAR */
+header {
+    height: 80px;
+    line-height: 80px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
 }
 
-.slider .indicators .indicator-item.active {
-  background-color: #FD5656;
+ul {
+    list-style: none;
 }
+
+ul li {
+    display: inline-block;
+}
+
+header nav {
+    float: right;
+}
+
+header .logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+header .logo:hover {
+    color: #FD5656;
+    text-decoration: none;
+}
+
+header nav ul li a {
+    padding-right: 20px;
+    color: white;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: #FD5656;
+    text-decoration: none;
+    
+}
+
+
+
+/* HOME */
+.img1 {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../image/map.jpg);
+    background-attachment: fixed;
+}
+
+.img2 {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../image/hangtime.png);
+    background-attachment: fixed;
+}
+
+.img3 {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../image/map.jpg);
+    background-attachment: fixed;
+}
+
+.slider ul li {
+    width: 100%;
+    height: 700px;
+}
+
+.white {
+    color:white;
+}
+
+.slider h1 {
+    font: normal normal normal 56px/1.4em helveticaneuew01-thin,sans-serif;
+    text-transform: uppercase;
+    margin-top: 250px;
+    letter-spacing: .075em;
+}
+
+.slider h2 {
+    font: normal normal normal 20px/1.4em helveticaneuew01-45light,sans-serif;
+    letter-spacing: .005em;
+}
+
+.slider .btn {
+    padding: 10px 50px;
+
+}
+
+.slider .btn-first {
+    background-color: #FD5656;
+    color: white;
+}
+
+.slider .btn-second {
+    color: white;
+    border: 1px solid #FD5656;
+}
+
+.slider .btn-second:hover {
+    background-color: #FD5656;
+    color: white;
+}
+
+
+
+
+/* ABOUT */
+.ourservices {
+    margin-top: 100px;
+    padding-bottom: 120px;
+    border-bottom: 1px solid lightgray;
+}
+
+.gaps {
+    margin-top: 60px;
+}
+
+.ourservices .fa {
+    height: 80px;
+    width: 80px;
+    font-size: 30px;
+    padding: 25px 25px;
+    border-radius: 50%;
+    background-color: #FD5656;
+    color: #fff;
+}
+
+.ourservices p {
+    color: gray;
+}
+
+
+
+
+/* MEET FOUNDERS */
+.team-area {
+    margin-top: 100px;
+    padding-bottom: 120px;
+    border-bottom: 1px solid lightgray;
+}
+
+.team-area h2 {
+    margin-bottom: 60px;
+}
+
+.team-man {
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+    top: -75px;
+    overflow: hidden;
+    min-height: 150px;
+    min-width: 150px;
+    height: 150px;
+    width: 150px;
+    border: 4px solid #FD5656;
+    border-radius: 50%;
+}
+
+.team-man img {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    border-radius: 50%;
+}
+
+
+.team-block h3 {
+    color: #FD5656;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 90px;
+    margin-bottom: 5px;
+    
+}
+
+.team-block span {
+    color: #6c6c6c;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+}
+
+.team-block p {
+    color: dimgrey;
+    font-size: 14px;
+    padding: 25px 15px;
+    line-height: 24px;
+}
+
+.team-description {
+    background-color: #f5f5f5;
+}
+
+.team-social-network {
+    text-align: center;
+    padding-bottom: 15px;
+    
+}
+
+.team-social-network a {
+    margin: 0 6px;
+}
+
+.team-social-network i {
+    height: 40px;
+    width: 40px;
+    background: white;
+    text-align: center;
+    color: #FD5656;
+    border-radius: 50%;
+    border: 3px solid #c4e5f0;
+    padding-top: 10px;
+}
+
+.team-block:hover .team-description {
+    background-color: #FD5656;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.team-block:hover .title h3, 
+.team-block:hover .title span {
+    color: white;
+    transition: all 0.2s ease-in-out;
+    
+}
+
+.team-block:hover .team-description p {
+    color: #f9f9f9;
+    transition: all 0.2s ease-in-out;
+}
+
+.team-block:hover .team-social-network i {
+    border-color: white;
+    background-color: #FD5656;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+/* CONTACT */
+.contact {
+    padding: 50px 0 80px;
+    text-align: center;
+}
+
+.contact p {
+    padding-bottom: 80px;
+    color: #737373;
+}
+
+.contact h2 {
+    color: #4c4c4c;
+    margin: 20px 0 20px;
+}
+
+.contact .input-group {
+    margin-bottom: 25px;
+}
+
+.contact .form-control {
+    border-radius: 0 !important;
+}
+
+.contact span {
+    border-radius: 0 !important;
+}
+
+.contact .btn {
+    border-radius: 0;
+    width: 100%;
+    font-size: 15px;
+    background-color: #FD5656;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact .btn:hover {
+    background-color: #a85959 !important;
+    color: #fff !important;
+}
+
+
+
+
+/* FOOTER */
+.footer {
+    padding: 30px;
+    color: #cccccc;
+    background-color: #222222;
+}
+
+.footer .social {
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #cccccc;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.footer input {
+    height: 40px;
+    width: 160px;
+    padding: 5px;
+    border: none;
+    background-color: #cccccc;
+    color: #000;
+}
+
+.footer .btn {
+    padding: 10px 5px 10px;
+    margin: -3px 0 0 5px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
