@@ -77,7 +77,7 @@ $(document).ready(function(){
             <li class="img1 text-center white">
                 <h1>HANGTIME</h1>
                 <h2>The social event mapping application connecting students across campus.</h2>
-                <h2>Coming soon to iOS in April 2018!</h2>
+                <h2>Coming soon to iOS in May 2018!</h2>
                 <br><br>
                 <div class="button">
                     <a href="" class="btn btn-first">Get The App</a>
@@ -171,10 +171,10 @@ $(document).ready(function(){
                        <div class="team-description text-center">
                            <div class="title">
                                <h3>Jerry Huang</h3>
-                               <span>Founder</span>
+                               <span>Founder, CEO</span>
                            </div>
                            <p>
-                               Jerry is a computer science major at UT Austin with a passion for technology and entrepreneurship.
+                               Jerry is a CS major at UT Austin and the iOS Developer at Hangtime. He's interested in software engineering and enjoys developing mobile and web apps.
                            </p>
                            <div class="team-social-network">
                                <a href="https://www.facebook.com/jerry.huang.24" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -196,7 +196,7 @@ $(document).ready(function(){
                                <span>Co-Founder</span>
                            </div>
                            <p>
-                               Avner is majoring in computer science at UT and loves building full stack websites and designing projects.
+                               Avner is majoring in computer science at UT and manages business & outreach at Hangtime. He loves building full stack websites and designing projects.
                            </p>
                            <div class="team-social-network">
                                <a href="https://www.facebook.com/avner.khan.52" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -225,29 +225,27 @@ $(document).ready(function(){
               <div class="row">
                   <h2>Contact</h2>
                   <p>Have any inquiries? Contact our 24/7 support team!</p>
-                  <form method="POST" action="https://formspree.io/avboy15@gmail.com">
                   <div class="col-lg-6 col-md-6">
                       <div class="input-group input-group-lg">
                           <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
-                          <input name="realName" type="text" class="form-control" aria-describedby="sizaing-addon1" placeholder="Full Name">
+                          <input type="text" class="form-control" aria-describedby="sizaing-addon1" placeholder="Full Name">
 
                       </div><div class="input-group input-group-lg">
                           <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                          <input name="emailName" type="text" class="form-control" aria-describedby="sizaing-addon1" placeholder="Email">
+                          <input type="text" class="form-control" aria-describedby="sizaing-addon1" placeholder="Email">
 
                       </div><div class="input-group input-group-lg">
                           <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-phone" aria-hidden="true"></i></span>
-                          <input name="phoneName" type="text" class="form-control" aria-describedby="sizaing-addon1" placeholder="Phone Number">
+                          <input type="text" class="form-control" aria-describedby="sizaing-addon1" placeholder="Phone Number">
 
                       </div>
                   </div>
                   <div class="col-lg-6 col-md-6">
                       <div class="input-group">
-                          <textarea name="textName" id="" cols="80" rows="6" class="form-control"></textarea>
+                          <textarea name="" id="" cols="80" rows="6" class="form-control"></textarea>
                       </div>
-                      <button type="submit" class="btn btn-lg">Submit Your Message</button>
+                      <button onclick="givealert('Your message has been submitted to the Hangtime staff!')" class="btn btn-lg">Submit Your Message</button>
                   </div>
-                </form>
               </div>
           </div>
       </div>
@@ -277,30 +275,21 @@ $(document).ready(function(){
                     <a href ="https://www.facebook.com/apphangtime/" target="_blank"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
                     <a href ="https://twitter.com/apphangtime" target="_blank"><i class="social fa fa-twitter" aria-hidden="true"></i></a>
                     <a href ="https://www.linkedin.com/company/hangtimeapp/" target="_blank"><i class="social fa fa-linkedin" aria-hidden="true"></i><br></a>
-                    <input id="subscribe" type="email" placeholder="Subscribe For Updates"><button onclick="subscribeAdd()" class="btn btn-success">Subscribe</button>
+                    <input type="email" placeholder="Subscribe For Updates"><button onclick="givealert('You have successfully subscribed to future Hangtime updates.')" class="btn btn-success">Subscribe</button>
                 </div>
             </div>
         </div>
     </div>
-    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCCtbRJP5nLWaWzhtot8eKUATclR4iEj-c",
-    authDomain: "hangtime-web-sub.firebaseapp.com",
-    databaseURL: "https://hangtime-web-sub.firebaseio.com",
-    projectId: "hangtime-web-sub",
-    storageBucket: "hangtime-web-sub.appspot.com",
-    messagingSenderId: "882403550044"
-  };
-  firebase.initializeApp(config);
-</script>
+
+
+
+
 
     <script src="js/main.js" type="text/javascript"></script>
     <script src="js/jquery.slicknav.min.js" type="text/javascript"></script>
     <script src="js/wow.min.js"></script>
-    <script>
-          new WOW().init();
-    </script>
-    </body>
+      <script>
+      new WOW().init();
+      </script>
+</body>
 </html>
