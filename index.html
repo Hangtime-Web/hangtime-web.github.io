@@ -1,295 +1,317 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Hangtime</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/slicknav.min.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link href="fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.min.css" rel="stylesheet">
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Hangtime</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href="images/logo.ico" />
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Fonts -->
+        <!-- Source Sans Pro -->
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400i|Source+Sans+Pro:300,400,600,700" rel="stylesheet">
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700" rel="stylesheet">
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://use.fontawesome.com/5ddb9bc92c.js"></script>
-    <script src="js/caroufredsel.js" type="text/javascript"></script>
-    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-    <script src="js/scroller.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+        <!-- CSS -->
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
-</head>
+        <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
 
 
+        <link rel="stylesheet" href="css/themefisher-fonts.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/custom.css">
+        <!-- Responsive Stylesheet -->
+        <link rel="stylesheet" href="css/responsive.css">
 
-<body>
+    </head>
 
-  <!--- Navigation Bar ---->
-    <header>
-        <div class="container">
-            <div class="row">
-                <a href="#home" class="logo">HANGTIME</a>
-                <nav>
-                    <ul class="menu" id="menu">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#team">Team</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+    <body id="body">
 
-    </header>
+    	<div id="preloader-wrapper">
+    		<div class="pre-loader"></div>
+    	</div>
 
+	    <!--
+	    Header start
+	    ==================== -->
 
-
-    <!--- Home Page ---->
-    <section id = "home" class="slider">
-        <ul class="slider-carousel" id="slider-carousel">
-            <li class="img1 text-center white">
-                <h1>HANGTIME</h1>
-                <h2>The social event mapping application connecting students across campus.</h2>
-                <h2>Beta testing begins on April 12, 2018!</h2>
-                <br><br>
-                <div class="button">
-                    <a href="" class="btn btn-first">Get The App</a>
-                    <a href="#about" class="btn btn-second">Learn More</a>
-                </div>
-            </li>
-
-
-<!--        <li class="img2 text-center white">
-                <h2>HANGTIME</h2>
-                <p>A crowsourcing event discovery application</p><br><br>
-                <div class="button">
-                    <a href="" class="btn btn-first">Get The App</a>
-                    <a href="" class="btn btn-second">Learn More</a>
-                </div>
-            </li>
-
-            <li class="img3 text-center white">
-                <h2>HANGTIME</h2>
-                <p>A crowsourcing event discovery application</p><br><br>
-                <div class="button">
-                    <a href="" class="btn btn-first">Get The App</a>
-                    <a href="" class="btn btn-second">Learn More</a>
-                </div>
-            </li>
--->
-        </ul>
-    </section>
-
-
-
-    <!--- How it Works ---->
-    <div id = "about"></div>
-    <section class="ourservices">
-        <div  class="container">
-            <h3 class="text-center">HOW IT WORKS</h3>
-            <p class="text-center">
-            Start using Hangtime in 3 easy steps
-            </p>
-        </div>
-
-        <div class="container gaps">
-            <div class="row">
-                <div class="col-md-4 text-center wow fadeInRight">
-                    <i class="fa fa-edit" aria-hidden="true"></i>
-                    <h4>Add Events</h4>
-                    <p>Anyone can add an event to the social map for others to discover!</p>
-                </div>
-                <div class="col-md-4 text-center wow fadeInRight" data-wow-delay="0.3s">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                    <h4>Find Events</h4>
-                    <p>Find and discover events on the map that interest you!</p>
-                </div>
-                <div class="col-md-4 text-center wow fadeInRight" data-wow-delay="0.6s">
-                    <i class="fa fa-comments" aria-hidden="true"></i>
-                    <h4>Join Chats</h4>
-                    <p>Join the event's group chat to meet others who are also going.</p>
-                </div>
-            </div>
-        </div>
-        <br><br><br><br>
-    </section>
-
-
-
-    <!--- Our Team/Founders ---->
-    <div id = "team"></div>
-    <section class="team-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <h2>MEET THE FOUNDERS</h2><br><br><br><br>
-<!--
-                    <div class="sub-heading">
-                        <p>
-                            Meet the founders of Hangtime and click on each to learn more about them!
-                        </p><br><br><br><br>
-                    </div>
--->
-                </div>
-            </div>
-
-            <div class="row">
-              <div class="col-sm-1"></div>
-
-               <div class="col-sm-5 wow fadeInUp">
-                   <div class="team-block">
-                       <div class="team-man">
-                           <img src="image/jerry.jpg" alt="">
-                       </div>
-                       <div class="team-description text-center">
-                           <div class="title">
-                               <h3>Jerry Huang</h3>
-                               <span>Founder, CEO</span>
-                           </div>
-                           <p>
-                               Jerry is a CS major at UT Austin and the iOS Developer at Hangtime. He's interested in software engineering and enjoys developing mobile and web apps.
-                           </p>
-                           <div class="team-social-network">
-                               <a href="https://www.facebook.com/jerry.huang.24" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                               <a href="https://www.linkedin.com/in/jerryhuangdev/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                               <a href="https://github.com/JerryHDev" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-
-                  <div class="col-sm-5 wow fadeInUp" data-wow-delay="0.3s">
-                   <div class="team-block">
-                       <div class="team-man">
-                           <img src="image/avner.jpeg" alt="">
-                       </div>
-                       <div class="team-description text-center">
-                           <div class="title">
-                               <h3>Avner Khan</h3>
-                               <span>Co-Founder</span>
-                           </div>
-                           <p>
-                               Avner is majoring in computer science at UT and manages business & outreach at Hangtime. He loves building full stack websites and designing projects.
-                           </p>
-                           <div class="team-social-network">
-                               <a href="https://www.facebook.com/avner.khan.52" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                               <a href="https://www.linkedin.com/in/avner-k-131905128" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                               <a href="https://github.com/avnerkhan" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-
-               <div class="col-sm-1"></div>
-
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <!--- Contact Us ---->
-    <div id = "contact"></div>
-    <br>
-    <section class="contact-us">
-      <div class="contact">
-          <div id ="contact" class="container">
-              <div class="row">
-                  <h2>Contact</h2>
-                  <p>Have any inquiries? Contact our 24/7 support team!</p>
-                  <div class="col-lg-6 col-md-6">
-                      <div class="input-group input-group-lg">
-                          <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
-                          <input type="text" class="form-control" aria-describedby="sizaing-addon1" placeholder="Full Name">
-
-                      </div><div class="input-group input-group-lg">
-                          <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                          <input type="text" class="form-control" aria-describedby="sizaing-addon1" placeholder="Email">
-
-                      </div><div class="input-group input-group-lg">
-                          <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-phone" aria-hidden="true"></i></span>
-                          <input type="text" class="form-control" aria-describedby="sizaing-addon1" placeholder="Phone Number">
-
-                      </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6">
-                      <div class="input-group">
-                          <textarea name="" id="" cols="80" rows="6" class="form-control"></textarea>
-                      </div>
-                      <button onclick="givealert('Your message has been submitted to the Hangtime staff!')" class="btn btn-lg">Submit Your Message</button>
-                  </div>
+      <div id="home" class="border no-show"></div>
+        <div class="container no-show">
+            <nav class="navbar navigation center-show" id="top-nav">
+                <a class="navbar-brand logo text-center" href="#">
+                    <h1 class="no-show">Hangtime</h1>
+                </a>
+              <button class="navbar-toggler hidden-lg-up float-lg-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" >
+                  <i class="tf-ion-android-menu no-show"></i>
+              </button>
+              <div class="navbar-toggleable-md no-show" id="navbarResponsive">
+                <ul class="nav navbar-nav menu float-lg-right" id="top-nav">
+                  <li class="active">
+                    <a href="#about">ABOUT</a>
+                  </li>
+                  <li class="">
+                    <a href="#demo">DEMO</a>
+                  </li>
+                  <li class="">
+                    <a href="#contact">CONTACT</a>
+                  </li>
+                </ul>
               </div>
-          </div>
-      </div>
-    </section>
-
-
-
-
-    <!--- Footer ---->
-    <div id="footer" class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4">
-                    <h4>Contact Us</h4>
-                    <p><i class="fa fa-envelope" aria-hidden="true"></i> admin@hangtime.io</p>
-                    <p><i class="fa fa-phone" aria-hidden="true"></i> +1 650 468 1819</p>
-                    <p><i class="fa fa-globe" aria-hidden="true"></i> www.hangtime.io</p>
+            </nav>
+        </div>
+<br class="no-show">
+	    <section class="hero-area bg-1 bg-opacity call-to-action">
+	        <div class="container">
+	            <div class="row text-center">
+                <div class="block col-md-6">
+                    <h1 class="">Finding Fun <br/> Made Easy</h1>
+                    <p>Hangtime is an app that allows people to find nearby events in a simple, intuitive fashion. No more scrolling through groupchats, scraping facebook, or walking aimlessly around campus. With Hangtime, fun events are a simple click away. </p>
+                    <a class="btn btn-main" href="#" role="button" onclick="window.alert('Hangtime is coming soon! Stay updated for the release.')">Download now on the app store</a>
                 </div>
-                <div class="col-lg-4 col-md-4">
-                    <h4>About</h4>
-                    <p><i class="fa fa-square-o" aria-hidden="true"></i> About Us</p>
-                    <p><i class="fa fa-square-o" aria-hidden="true"></i> Privacy</p>
-                    <p><i class="fa fa-square-o" aria-hidden="true"></i> Term & Conditions</p>
+                <div class="col-md-6">
+                  <img src="images/mapper.png" width="500" height="500" class="no-show">
                 </div>
-                <div class="col-lg-4 col-md-4">
-                    <h4>Stay In Touch</h4>
-                    <a href ="https://www.facebook.com/apphangtime/" target="_blank"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
-                    <a href ="https://twitter.com/apphangtime" target="_blank"><i class="social fa fa-twitter" aria-hidden="true"></i></a>
-                    <a href ="https://www.linkedin.com/company/hangtimeapp/" target="_blank"><i class="social fa fa-linkedin" aria-hidden="true"></i><br></a>
-                    <input type="email" placeholder="Subscribe For Updates"><button onclick="givealert('You have successfully subscribed to future Hangtime updates.')" class="btn btn-success">Subscribe</button>
+
+
+	            </div><!-- .row text-center close -->
+	        </div><!-- .container close -->
+	    </section><!-- header close -->
+
+        <!--
+        Feature start
+        ==================== -->
+        <div id="about"></div>
+        <section class="feature section">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="heading">
+                        <h2>Core Features</h2>
+                    </div>
+                    <div class="col-md-5">
+                      <div class="feature-box">
+                          <i class="tf-ion-ios-people-outline"></i>
+                          <h4>Crowdsourced events</h4>
+                          <p>Hangtime allows anyone to put their events on the app. Anything from a pickup basketball game to an impromptou concert can be put.</p>
+                      </div>
+                        <div class="feature-box">
+                            <i class="tf-ion-map"></i>
+                            <h4>Map Interface</h4>
+                            <p>All Hangtime events can be viewed in a simple map interface.</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="tf-ion-ios-chatboxes-outline"></i>
+                            <h4>Group chat for each event</h4>
+                            <p>Each event has a groupchat that you can join or leave at your will.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 text-center">
+                    </div>
+                    <div class="col-md-5">
+                        <div class="feature-box">
+                            <i class="tf-ion-ios-star-outline"></i>
+                            <h4>Featured Events</h4>
+                            <p>Don't trust the public? Hangtime also has featured events seperate from the crowdsourced ones.</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="tf-ion-ios-briefcase-outline"></i>
+                            <h4>Partnerships</h4>
+                            <p>Hangtime has partnerships with various fraternities, clubs, and resturants in the Austin area.</p>
+                        </div>
+                        <div class="feature-box">
+                            <i class="tf-ion-cash"></i>
+                            <h4>Free</h4>
+                            <p>All of this is completely free. All you have to do is download the app!</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .container close -->
+        </section><!-- #service close -->
+        <hr>
+        <div id="demo"></div>
+        <section class="feature-list section">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-12 text-center">
+                        <div class="heading">
+                            <h2>How Does It Work?</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center">
+                  <div class="col-md-6 text-center">
+                      <div class="content mt-100">
+                          <h4 class="subheading">Pick a tab</h4>
+                          <p>Pick a tab that interests you.</p>
+                      </div>
+                  </div>
+                    <div class="col-md-6 text-center">
+                        <img class="" src="images/pick.png" height="375" width="375" alt="">
+                    </div>
+                </div>
+                <hr>
+                <div class="row text-center">
+                  <div class="col-md-6 text-center">
+                      <div class="content mt-100">
+                          <h4 class="subheading">Pick an event</h4>
+                          <p>Find events near you with a simple map interface.</p>
+                      </div>
+                  </div>
+                  <div class="col-md-6 text-center">
+                      <img class="img-responsive" src="images/event.png" width="375" height="375" alt="">
+                  </div>
+                </div>
+                <hr>
+                <div class="row text-center">
+                  <div class="col-md-6 text-center">
+                      <div class="content mt-100">
+                          <h4 class="subheading">See Details</h4>
+                          <p>Get quick information about an event without all the BS.</p>
+                      </div>
+                  </div>
+                    <div class="col-md-6 text-center">
+                        <img class="" src="images/detail.png" width="375" height="375" alt="">
+                    </div>
+                </div>
+                <hr>
+                <div class="row text-center">
+                  <div class="col-md-6 text-center">
+                      <div class="content mt-100">
+                          <h4 class="subheading">Join Chats</h4>
+                          <p>See what people are saying about this event.</p>
+                      </div>
+                  </div>
+                  <div class="col-md-6 text-center">
+                      <img class="img-responsive" src="images/chat.png" width="375" height="375" alt="">
+                  </div>
+                </div>
+                <hr>
+                <div class="row text-center">
+                  <div class="col-md-6 text-center">
+                      <div class="content mt-100">
+                          <h4 class="subheading">Create your own events</h4>
+                          <p>Make your own events for the public to see!</p>
+                      </div>
+                  </div>
+                    <div class="col-md-6 text-center">
+                        <img class="" src="images/make.png" width="375" height="375" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="promo-details section">
+            <div class="container">
+                <div class="row text-center">
+                  <div class="col-md-6 text-center">
+                      <div class="content mt-100">
+                          <h2 class="text-center">Designed by Longhorns <br / > For Longhorns</h2>
+                          <p>Even in a lively town like Austin, TX, it is often hard to find cool events. That's why Hangtime seeks to find the best events across Austin to bring to the fingertips of UT students.</p>
+                      </div>
+                  </div>
+                    <div class="col-md-6">
+                      <br class=""><br class="">
+                        <img src="images/bevo.png" height="175" width="350" class="" alt="">
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
 
 
 
+        <div id="contact"></div>
+        <section class="call-to-action section bg-opacity bg-1">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-12 wow text-center">
+                        <div class="block">
+                            <h2 class="subheading">Get Featured!</h2>
+                            <p>Contact a Hangtime administrator to get your orginization's events featured, ask any questions, or report a case.</p>
+                            <div class="col-lg-6 offset-lg-3">
+                                <div class="input-group">
+                                  <span class="input-group-btn">
+                                    <button class="btn btn-default btn-main" type="button" onclick="window.open('mailto:hangtime.contact@gmail.com')">Contact Administrator</button>
+                                  </span>
+                                </div><!-- /input-group -->
+                              </div><!-- /.col-lg-6 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- #call-to-action close -->
 
 
-    <script src="js/main.js" type="text/javascript"></script>
-    <script src="js/jquery.slicknav.min.js" type="text/javascript"></script>
-    <script src="js/wow.min.js"></script>
-      <script>
-      new WOW().init();
-      </script>
-</body>
+        <footer>
+            <div class="container text-center">
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <div class="block">
+                            <ul class="menu">
+                                <li class=" active">
+                                    <a href="#home">HOME</a>
+                                </li>
+                                <li class="">
+                                    <a href="#about">ABOUT</a>
+                                </li>
+                                <li class="">
+                                    <a href="#demo">DEMO</a>
+                                </li>
+                                <li class="">
+                                    <a href="#contact">CONTACT</a>
+                                </li>
+                            </ul>
+                            <p class="copyright-text">Copyright &copy; Hangtime LLC | All right reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- Js -->
+        <script src="js/vendor/jquery-2.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+
+              // Store hash
+              var hash = this.hash;
+
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
+
+    </body>
 </html>
