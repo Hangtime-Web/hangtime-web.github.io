@@ -154,6 +154,10 @@ a:active {
   .col-md-6{
     width: 100%;
   }
+  img{
+    width: 360px;
+    height: 360px;
+  }
 
 
 }
